@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def sine_wave(frequency=1.0, amplitude=1.0, duration=1.0, sampling_rate=44100):
+def sine_wave(frequency=2.0, amplitude=1.0, duration=1.0, sampling_rate=44100):
 
     t = np.linspace(0, duration, int(sampling_rate * duration), endpoint=False)
 
@@ -10,7 +10,7 @@ def sine_wave(frequency=1.0, amplitude=1.0, duration=1.0, sampling_rate=44100):
 
     return t, y
 
-def plot_sine_wave(frequency=1.0, amplitude=1.0, duration=1.0, sampling_rate=44100):
+def plot_sine_wave(frequency=2.0, amplitude=1.0, duration=1.0, sampling_rate=44100):
 
     t, y = sine_wave(frequency, amplitude, duration, sampling_rate)
 
@@ -24,4 +24,4 @@ def plot_sine_wave(frequency=1.0, amplitude=1.0, duration=1.0, sampling_rate=441
 
 if __name__ == "__main__":
 
-    plot_sine_wave(frequency=1.0, amplitude=1.0, duration=1.0, sampling_rate=44100)
+    plot_sine_wave(frequency=2.0, amplitude=1.0, duration=1.0, sampling_rate=44100)
